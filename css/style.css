@@ -843,10 +843,12 @@ footer{
   }
 
   @media (max-width: 500px){
-    .banner .main video{
-      width: 100vw;
+    .banner .main {
+      position: absolute;
+      top: 179px;
+      left: 0;
     }
-    
+
     #hamburger {
       display: block;
       z-index: 9999;
@@ -928,6 +930,15 @@ footer{
   }
 
   @media (max-width: 380px){
+    .banner .main {
+      position: absolute;
+      top: 179px;
+      left: 0;
+    }
+
+    .banner .main video{
+      width: 100vw;
+    }
     .sec-1 .canvas {
       margin-top: -150px;
     }
@@ -995,10 +1006,6 @@ footer{
 
     .logo img {
       height: 50px;
-    }
-
-    .banner {
-      height: 563px;
     }
 
     .sec-1 .carousel img {
