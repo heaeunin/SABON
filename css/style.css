@@ -912,6 +912,10 @@ footer{
   }
 
   @media (max-width: 380px){
+    .sec-1 .canvas {
+      margin-top: -150px;
+    }
+
     #hamburger {
       display: block;
       z-index: 9999;
@@ -939,6 +943,17 @@ footer{
       justify-content: center;
       align-items: center;
     }
+
+    .main-menu li {
+      opacity: 1;
+      transition: 0.5s;
+      /* padding: 8px 16px; */
+      /* margin: 15px 15px; */
+  }
+
+  .header-area .main-menu .menu {
+    margin-bottom: 1.8rem;
+  }
 
     .header-area {
       display: flex;
@@ -979,7 +994,7 @@ footer{
       font-size: 3rem;
       margin: 20px 27px 20px 80px;
     }
-    
+
     .sec-4 .text-top {
       /* margin-top: 40px; */
       font-size: 1rem;
