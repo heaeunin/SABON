@@ -38,4 +38,18 @@ $(document).ready(function(){
       }, 100);
     });
 
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      autoplay : {  
+        delay : 2500,
+      },
+      loop:true,
+      loopAdditionalSlides : 1,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
 });
