@@ -4,13 +4,18 @@
   overflow: hidden;
 }
 
+.container{
+  width: 1500px;
+  margin: 0 auto;
+}
+
 #hamburger{
   display: none;
 }
 
 .head-bar{
   width: 100%;
-  height: 50px;
+  height: 40px;
   background-color: #F3D4D4;
 }
 
@@ -30,7 +35,7 @@ header{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 30px;
+  margin: 20px;
 }
 
 .logo img{
@@ -81,7 +86,7 @@ header{
 
 .sub-menu-box{
   position: fixed;
-  top: 18%;
+  top: 15%;
   left: 0;
   width: 100%;
   height: 25%;
@@ -95,7 +100,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 40vw;
+  width: 42%;
   height: 25vh;
   /* 1230 / 1920(기준) * 100 =64.. */
   /* margin: 0 auto; */
@@ -124,8 +129,8 @@ header{
 }
 
 .sub-menu-box .menu-right .photo{
-  width: 580px;
-  height: 216px;
+  width: 604px;
+  height: 228px;
 }
 
 .sub-menu-box .menu-left{
@@ -151,46 +156,14 @@ header{
   width: 100vw;
 }
 
+.sec-1{
+  position: relative;
+  clear: both;
+}
+
 .sec-1 .canvas{
-  margin-top: 200px;
+  /* margin-top: 12em; */
 } 
-
-.sec-1 .carousel{
-  display: flex;
-  align-items: center;
-  animation: carousel 60s linear infinite;
-  margin-top: 80px;
-  flex-wrap: nowrap;
-}
-
-@keyframes carousel{
-  0%{
-    transform: translateX(0%);
-  }100%{
-    transform: translateX(-100%);
-  }
-}
-
-.sec-1 .carousel img{
-  width: 300px;
-  height: 500px;
-}
-
-.sec-1 .cell{
-  width: 308px;
-  height: 361px;
-  margin-left: -20px;
-  opacity: 0.6s;
-  /* transition: 0.5s;/ */
-  margin-bottom: 130px;
-}
-
-.sec-1 .cell:nth-child(even){
-  opacity: 1;
-  width: 402px;
-  height: 498px;
-  margin-left: 10px;
-}
 
 .sec-txt{
   font-family: 'Playfair Display', serif;
@@ -200,6 +173,27 @@ header{
   padding-top: 30px;
   display: flex;
   justify-content: center;
+  /* margin-bottom: 2em; */
+}
+
+.sec-1 .swiper{
+  width: 70%;
+  position: relative;
+  margin-bottom: 11em;
+}
+
+.sec-1 .swiper-button-next{
+  position: absolute;
+  top: 66%;
+  left: 88%;
+  color: #ccc;
+}
+
+.sec-1 .swiper-button-prev{
+  position: absolute;
+  top: 66%;
+  left: 10%;
+  color: #ccc;
 }
 
 .sec-2{
@@ -261,18 +255,17 @@ header{
   color: #552B2B;
   font-weight: 700;
   font-size: 3rem;
-  margin: 50px 70px 70px 125px;
+  margin-top: 4em;
 }
 
 .sec-3 .text{
-  margin: 120px;
   line-height: 1.75rem;
   color: #424242;
+  margin: 2em 0 5em 0;
 }
 
 .sec-3 .img-box4 img{
-  width: 928px;
-  height: 485px;
+  width: 100%;
 }
 
 .sec-3-right{
@@ -297,7 +290,7 @@ header{
 
 .sec-4 .text-box1{
   text-align: center;
-  margin: 30px;
+  /* margin: 30px; */
 }
 
 .sec-4 .text-id{
@@ -311,12 +304,13 @@ header{
 }
 
 .sec-4 .img-box5 img{
-  width: 340px;
-  height: 340px;
+  width: 100%;
+  height: 100%;
   margin: 15px;
   transition: all 0.5s ease-out;
   transition: 0.5s;
   cursor: pointer;
+  object-fit: cover;
 }
 
 .sec-4 .img-box5 img:hover{
@@ -330,8 +324,8 @@ header{
 }
 
 footer{
-  width: 1920;
-  height: 580px;
+  width: 100%;
+  height: 44vh;
   background-color: #F3D4D4;
 }
 
@@ -341,7 +335,7 @@ footer{
 }
 
 .footer-t .inner-box{
-  margin: 100px 60px;
+  margin: 3em 6em;
 }
 
 .footer-t .inner-box h1{
@@ -366,10 +360,10 @@ footer{
 
 .footer-logo{
   width: 112px;
-  height: 70px;
+  /* height: 70px; */
   margin: 0 auto;
-  margin-top: 40px;
   cursor: pointer;
+  /* margin-top: -3em; */
 }
 
 .top-btn{
@@ -394,14 +388,14 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 52vw;
+    /* width: 52vw; */
     height: 25vh;
     /* 1230 / 1920(기준) * 100 =64.. */
     /* margin: 0 auto; */
     /* margin-top: 132px; */
     position: absolute;
-    /* top: 50%; */
-    left: 50%;
+    top: 0;
+    left: 49%;
     transform: translateX(-50%);
     z-index: 99;
     opacity: 0;
@@ -430,6 +424,17 @@ footer{
 }
 
 @media (max-width: 1400px){
+  .banner{
+    width: 100%;
+    height: 69vh;
+    position: relative;
+  }
+  
+  .container {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  
   .sub-menu-box.active{
     opacity: 1;
     z-index: 99;
@@ -437,9 +442,9 @@ footer{
   
   .sub-menu-box {
     position: fixed;
-    top: 15px;
+    top: 0;
     left: 0;
-    width: 100%;
+    /* width: 100%; */
     height: 38%;
     background-color: rgb(255, 249, 226);
     transition: 0.5s;
@@ -451,7 +456,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 53vw;
+    width: 49vw;
     height: 54vh;
     /* margin: 0 auto; */
     /* margin-top: 132px; */
@@ -481,8 +486,8 @@ footer{
   }
   
   .sub-menu-box .menu-right .photo {
-    width: 511px;
-    height: 189px;
+    width: 100%;
+    height: 100%;
   }
 
   .icon-box{
@@ -502,7 +507,7 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 30px;
+    margin: 20px;
   }
 
   .main-menu{
@@ -517,10 +522,16 @@ footer{
   }
 
   .sec-3 .img-box4 img{
-    width: 676px;
+    width: 100%;
     /* height: 485px; */
   }
 
+  .sec-3 .sec-3-right{
+        /* width: 50%; */
+        float: right;
+        margin-bottom: 90px;
+  }
+  
   .sec-4 .img-box5 img{
     width: 269px;
   }
@@ -532,6 +543,10 @@ footer{
   .footer .container{
     width: 100%;
     padding: 32px;
+  }
+
+  .footer-t .inner-box{
+    margin: 2em 3em;
   }
   
 } 
@@ -611,6 +626,11 @@ footer{
     margin: 40px;
   }
 
+  .banner .main video{
+    width: 100vw;
+    height: 100vh;
+  }
+
   .logo{
     margin: 0 auto;
   }
@@ -677,8 +697,9 @@ footer{
   }
   
   .sec-1 .best {
-    /* margin-top: 0; */
-    display: none;
+    /* margin-top: -31em; */
+    /* display: none; */
+    margin-bottom: 1em;
   }
   
   .sec-1 .carousel{
@@ -720,16 +741,16 @@ footer{
   }
   
   .sec-2 .img-box{
-    width: 350px;
+    width: 31%;
     height: 450px;
-    margin: 20px;
+    margin: 10px;
     background-color: #fff;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     cursor: pointer;
   }
   
   .sec-2 .img-box img{
-    width: 350px;
+    width: 100%;
     padding: 20px;
     transition: 0.3s;
   }
@@ -760,11 +781,11 @@ footer{
   }
 
   .sec-3 .sec-3-right{
-    width: 100%;
+    /* width: 100%; */
   }
 
   .sec-3 .img-box4 img{
-    width: 980px;
+    width: 100%;
     /* height: 485px; */
   }
 
@@ -778,9 +799,9 @@ footer{
   }
 
   .footer-top {
-    width: 720px;
+    width: 900px;
     margin: 0 auto;
-    margin-top: 150px;
+    margin-top: 4em;
   }
   
   footer {
@@ -790,6 +811,30 @@ footer{
   .footer-t .inner-box{
     width: 35%;
     margin: 44px 50px 0 46px;
+  }
+
+  .footer-logo{
+    display: none;
+  }
+
+  .sec-1 .swiper{
+    width: 88%;
+    position: relative;
+    margin-bottom: 6em;
+  }
+
+  .sec-1 .swiper-button-next{
+    position: absolute;
+    top: 66%;
+    left: 96%;
+    color: #ccc;
+  }
+
+  .sec-1 .swiper-button-prev{
+    position: absolute;
+    top: 66%;
+    left: 1.5%;
+    color: #ccc;
   }
   }
   
